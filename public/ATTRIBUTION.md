@@ -15,6 +15,20 @@ Source OBJ comments mention an older CC BY-SA 2.1 Japan license. The official cu
 
 BodyParts3D represents an adult male reference anatomy based on TARO MRI and anatomical illustration refinements. It is not a complete model of every possible human anatomical structure or variation. This interface is educational and is not a clinical tool.
 
+## Fascia-study derivative
+
+Derived from Human Atlas by ashemag: https://github.com/ashemag/human-atlas . The original MIT application license and author credit are preserved.
+
+The Fascia layer is a curated display classification reserved for named structures contained in BodyParts3D 4.0. **No independent named fascia is verified in the packaged snapshot** (`1c38bf35c254a891200d3cedecfd57abebe83d8d`). It is shown as not represented.
+
+By an explicit owner scope decision, the separate **Fascial system** category displays four existing meshes: FJ1423 / FMA58776, FJ1423M / FMA58777 (iliotibial tracts), FJ1471 / FMA40120, FJ1471M / FMA40121 (wrist flexor retinacula). It does not represent all named fasciae or all tissues of the broader fascial system. Existing names and concept memberships are preserved; parent-concept membership must not be interpreted as complete parent geometry.
+
+Additional adaptations: four display-system assignments, separate curated provenance metadata, material color/opacity controls, and explanatory interface text. No geometry, offsets, bounds, binary chunks, or gzip assets were regenerated or altered. No VHP, literature-derived or inferred geometry is included.
+
+Source anatomy indicates that BodyParts3D supplies the name and geometry; it is not a claim of direct donor segmentation. Unestablished subclassification is marked uncertain. Provenance references the official IS-A name and constituent-mesh tables from the dataset download page; exact inspected rows and SHA-256 hashes are in the repository research records.
+
+For education, exploration, and anatomical understanding only. Not for diagnosis, surgical planning, patient-specific medical decisions, or treatment decisions.
+
 ## Historical assets (not included in the current release)
 
 Earlier repository revisions included female reference anatomy: Kristen Browne and Heidi Schlehlein, Human Reference Atlas / HuBMAP, *3D Reference Organ Set for Female v1.5* (2023). CC BY 4.0. Geometry adapted for this viewer.

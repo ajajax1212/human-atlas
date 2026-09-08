@@ -37,3 +37,6 @@ next-env.d.ts
 /outputs/
 /work/
 *.tsbuildinfo
+
+# Official audit downloads: hashes and matched rows are tracked separately.
+/research/sources/

@@ -1,8 +1,36 @@
-# Human Atlas
+# Human Atlas — Fascia study
+
+This project is derived from **Human Atlas by ashemag**.
+Original project: https://github.com/ashemag/human-atlas
+
+This fork adds experimental fascia visualization infrastructure. Connective tissue research overlays are planned, **not included**. Anatomical data attribution and licensing are documented separately in [ATTRIBUTION.md](public/ATTRIBUTION.md). Development stays on `feature/fascia-layer`; no upstream PR or main merge is part of this work.
+
+## Native fascial display and evidence
+
+- **Fascia (named): not represented.** No independent named-fascia mesh was verified in the packaged atlas. This is not a claim about all BodyParts3D data. The original named-fascia Phase 1 acceptance condition remains unmet.
+- **Fascial system:** the owner-approved broader category, containing only the existing right/left iliotibial tracts and right/left wrist flexor retinacula. These are not complete fascia lata or upper-limb fascia models.
+- Toggle or show only the category, search `fascial system`, `iliotibial tract`, `retinaculum`, or the source names/IDs, select, isolate, and explode. Open **Opacity & comparison** for opacity (10–100%, default 65%) and muscle/skeleton comparison presets. Reset restores 65%.
+- The inspector shows exact source pieces, concept IDs, uncertain subclassification, official references and **Source anatomy** evidence. Source anatomy means the source provides the name and geometry, not direct segmentation of a specific donor. Parent-concept search results may represent only the listed constituent meshes.
+- **Evidence system:** source-named, image-derived, literature-derived, and inferred are separate metadata categories. Only source-named geometry is shipped here. No inferred geometry fills missing anatomy.
+- **VHP overlay:** deferred; no NIfTI, new mesh, registration, or research overlay is loaded. VHP connective tissue must be a separate image-derived research layer, never relabeled named fascia.
+- **Disclaimer:** education, exploration, and anatomical understanding only. Not for diagnosis, surgical planning, patient-specific medical decisions, or treatment decisions.
+
+Curated decisions are in [data/fascia-native.json](data/fascia-native.json); all six candidates, exclusions, source verification and the baseline are in [research](research/phase-1-status.md). The allowlist is explicit; the regex candidate generator never makes classification decisions. All source geometry is reused unchanged.
+
+```sh
+npm run analyze:fascia
+npm run classify:fascia
+npm run validate
+npm run build
+```
+
+`analyze:fascia` requires Git history containing the pinned source commit. Classification and validation work offline from the packaged files. The optional `node scripts/validate-fascia.mjs --require-named-fascia` deliberately fails until independent named-fascia data meet the original acceptance condition. That failure is a documented data limitation, not a passing named-fascia implementation.
+
+## Original Human Atlas
 
 An interactive 3D anatomy explorer built with React, Three.js, and shadcn/ui. Take the BodyParts3D adult male reference apart into **2,234 individually selectable meshes**, explore **15 anatomical systems**, and search **3,432 named concepts**.
 
-**[Explore the live demo](https://human-atlas-seven.vercel.app)**
+**[Explore the original author's live demo](https://human-atlas-seven.vercel.app)** — this is the unmodified upstream site, not the fascia fork.
 
 ## Explore
 
