@@ -1,0 +1,30 @@
+{
+  "checked": "2026-09-08",
+  "sources": [
+    {
+      "url": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/LATEST/isa_parts_list_e.txt",
+      "sha256": "ab7796deedd49205e77f3609a1cb8c53e2bbee14ecb5c9a6ca05227469780513",
+      "matchedRows": [
+        "FMA22425\tBP5072\tright tensor fasciae latae",
+        "FMA22426\tBP9184\tleft tensor fasciae latae",
+        "FMA40120\tBP6527\tflexor retinaculum of right wrist",
+        "FMA40121\tBP8058\tflexor retinaculum of left wrist",
+        "FMA58776\tBP5628\tright iliotibial tract",
+        "FMA58777\tBP8856\tleft iliotibial tract"
+      ]
+    },
+    {
+      "url": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/LATEST/isa_element_parts.txt",
+      "sha256": "a3de74423f943b0d724ae8f59b3a817f87c423a544f8db98113b1980817cbeaf",
+      "matchedRows": [
+        "FMA22425\tright tensor fasciae latae\tFJ1438",
+        "FMA22426\tleft tensor fasciae latae\tFJ1438M",
+        "FMA40120\tflexor retinaculum of right wrist\tFJ1471",
+        "FMA40121\tflexor retinaculum of left wrist\tFJ1471M",
+        "FMA58776\tright iliotibial tract\tFJ1423",
+        "FMA58777\tleft iliotibial tract\tFJ1423M"
+      ]
+    }
+  ],
+  "conclusion": "Four approved parts match official names and constituent-mesh mappings. Parent fascia names are not independent geometry; two tensor fasciae latae candidates remain excluded. LATEST resources can change; hashes and extracted rows record the inspected version."
+}

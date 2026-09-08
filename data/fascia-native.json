@@ -1,0 +1,58 @@
+{
+  "version": 1,
+  "source": "BodyParts3D 4.0",
+  "sourceCommit": "1c38bf35c254a891200d3cedecfd57abebe83d8d",
+  "policy": "Named fascia and the broader fascial system are separate display categories. Explicit owner decision: display existing iliotibial tracts and wrist flexor retinacula under Fascial system. Do not rename these meshes as whole fasciae.",
+  "namedFasciaStatus": "not represented",
+  "parts": [],
+  "fascialSystemParts": [
+    {
+      "id": "FJ1423",
+      "conceptId": "FMA58776",
+      "name": "Right iliotibial tract",
+      "originalSystem": "skeletal",
+      "classification": "uncertain",
+      "structureType": "iliotibial-tract",
+      "evidence": "source-named",
+      "sourceDataset": "BodyParts3D-4.0",
+      "sourceReference": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/LATEST/isa_element_parts.txt",
+      "notes": "Included only in the broader Fascial system display category. This mesh does not represent the complete fascia lata. Subclassification is not established by the inspected tables."
+    },
+    {
+      "id": "FJ1423M",
+      "conceptId": "FMA58777",
+      "name": "Left iliotibial tract",
+      "originalSystem": "skeletal",
+      "classification": "uncertain",
+      "structureType": "iliotibial-tract",
+      "evidence": "source-named",
+      "sourceDataset": "BodyParts3D-4.0",
+      "sourceReference": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/LATEST/isa_element_parts.txt",
+      "notes": "Included only in the broader Fascial system display category. This mesh does not represent the complete fascia lata. Subclassification is not established by the inspected tables."
+    },
+    {
+      "id": "FJ1471",
+      "conceptId": "FMA40120",
+      "name": "Flexor retinaculum of right wrist",
+      "originalSystem": "sensory",
+      "classification": "uncertain",
+      "structureType": "retinaculum",
+      "evidence": "source-named",
+      "sourceDataset": "BodyParts3D-4.0",
+      "sourceReference": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/LATEST/isa_element_parts.txt",
+      "notes": "Included only in the broader Fascial system display category. This mesh does not represent the complete investing fascia of the upper limb. Subclassification is not established by the inspected tables."
+    },
+    {
+      "id": "FJ1471M",
+      "conceptId": "FMA40121",
+      "name": "Flexor retinaculum of left wrist",
+      "originalSystem": "sensory",
+      "classification": "uncertain",
+      "structureType": "retinaculum",
+      "evidence": "source-named",
+      "sourceDataset": "BodyParts3D-4.0",
+      "sourceReference": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/LATEST/isa_element_parts.txt",
+      "notes": "Included only in the broader Fascial system display category. This mesh does not represent the complete investing fascia of the upper limb. Subclassification is not established by the inspected tables."
+    }
+  ]
+}

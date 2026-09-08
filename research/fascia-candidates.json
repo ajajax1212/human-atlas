@@ -1,0 +1,609 @@
+{
+  "source": "https://github.com/ashemag/human-atlas/tree/1c38bf35c254a891200d3cedecfd57abebe83d8d",
+  "sourceCommit": "1c38bf35c254a891200d3cedecfd57abebe83d8d",
+  "summary": {
+    "totalParts": 2234,
+    "totalConcepts": 3432,
+    "totalTriangles": 2288268,
+    "chunks": 15,
+    "systems": {
+      "skeletal": 296,
+      "sensory": 45,
+      "nervous": 139,
+      "connective": 40,
+      "muscular": 402,
+      "arterial": 639,
+      "cardiac": 23,
+      "endocrine": 4,
+      "venous": 404,
+      "digestive": 97,
+      "respiratory": 119,
+      "lymphatic": 3,
+      "integumentary": 5,
+      "reproductive": 12,
+      "urinary": 6
+    },
+    "connectiveTissueParts": 40,
+    "namedFasciaIncluded": 0,
+    "fascialSystemIncluded": 4
+  },
+  "searchTerms": [
+    "fascia",
+    "fascial",
+    "aponeurosis",
+    "retinaculum",
+    "intermuscular septum",
+    "iliotibial tract"
+  ],
+  "candidates": [
+    {
+      "partId": "FJ1423",
+      "conceptId": "FMA58776",
+      "englishName": "Right iliotibial tract",
+      "currentSystem": "skeletal",
+      "candidateReason": [
+        "iliotibial tract"
+      ],
+      "decision": "fascial-system",
+      "reason": "Included only in the broader Fascial system display category. This mesh does not represent the complete fascia lata. Subclassification is not established by the inspected tables."
+    },
+    {
+      "partId": "FJ1423M",
+      "conceptId": "FMA58777",
+      "englishName": "Left iliotibial tract",
+      "currentSystem": "skeletal",
+      "candidateReason": [
+        "iliotibial tract"
+      ],
+      "decision": "fascial-system",
+      "reason": "Included only in the broader Fascial system display category. This mesh does not represent the complete fascia lata. Subclassification is not established by the inspected tables."
+    },
+    {
+      "partId": "FJ1438",
+      "conceptId": "FMA22425",
+      "englishName": "Right tensor fasciae latae",
+      "currentSystem": "connective",
+      "candidateReason": [
+        "fascia"
+      ],
+      "decision": "excluded",
+      "reason": "Tensor fasciae latae is a muscle name, not a named fascia. Preserve original system; correcting pre-existing atlas groupings is outside this change."
+    },
+    {
+      "partId": "FJ1438M",
+      "conceptId": "FMA22426",
+      "englishName": "Left tensor fasciae latae",
+      "currentSystem": "connective",
+      "candidateReason": [
+        "fascia"
+      ],
+      "decision": "excluded",
+      "reason": "Tensor fasciae latae is a muscle name, not a named fascia. Preserve original system; correcting pre-existing atlas groupings is outside this change."
+    },
+    {
+      "partId": "FJ1471",
+      "conceptId": "FMA40120",
+      "englishName": "Flexor retinaculum of right wrist",
+      "currentSystem": "sensory",
+      "candidateReason": [
+        "retinaculum"
+      ],
+      "decision": "fascial-system",
+      "reason": "Included only in the broader Fascial system display category. This mesh does not represent the complete investing fascia of the upper limb. Subclassification is not established by the inspected tables."
+    },
+    {
+      "partId": "FJ1471M",
+      "conceptId": "FMA40121",
+      "englishName": "Flexor retinaculum of left wrist",
+      "currentSystem": "sensory",
+      "candidateReason": [
+        "retinaculum"
+      ],
+      "decision": "fascial-system",
+      "reason": "Included only in the broader Fascial system display category. This mesh does not represent the complete investing fascia of the upper limb. Subclassification is not established by the inspected tables."
+    }
+  ],
+  "matchingConcepts": [
+    {
+      "id": "FMA7646",
+      "name": "retinaculum",
+      "elements": [
+        "FJ1471",
+        "FJ1471M"
+      ],
+      "sourcePieces": [
+        {
+          "id": "FJ1471",
+          "name": "Flexor retinaculum of right wrist",
+          "conceptId": "FMA40120"
+        },
+        {
+          "id": "FJ1471M",
+          "name": "Flexor retinaculum of left wrist",
+          "conceptId": "FMA40121"
+        }
+      ]
+    },
+    {
+      "id": "FMA22423",
+      "name": "tensor fasciae latae",
+      "elements": [
+        "FJ1438",
+        "FJ1438M"
+      ],
+      "sourcePieces": [
+        {
+          "id": "FJ1438",
+          "name": "Right tensor fasciae latae",
+          "conceptId": "FMA22425"
+        },
+        {
+          "id": "FJ1438M",
+          "name": "Left tensor fasciae latae",
+          "conceptId": "FMA22426"
+        }
+      ]
+    },
+    {
+      "id": "FMA22425",
+      "name": "right tensor fasciae latae",
+      "elements": [
+        "FJ1438"
+      ],
+      "sourcePieces": [
+        {
+          "id": "FJ1438",
+          "name": "Right tensor fasciae latae",
+          "conceptId": "FMA22425"
+        }
+      ]
+    },
+    {
+      "id": "FMA22426",
+      "name": "left tensor fasciae latae",
+      "elements": [
+        "FJ1438M"
+      ],
+      "sourcePieces": [
+        {
+          "id": "FJ1438M",
+          "name": "Left tensor fasciae latae",
+          "conceptId": "FMA22426"
+        }
+      ]
+    },
+    {
+      "id": "FMA39988",
+      "name": "flexor retinaculum of wrist",
+      "elements": [
+        "FJ1471",
+        "FJ1471M"
+      ],
+      "sourcePieces": [
+        {
+          "id": "FJ1471",
+          "name": "Flexor retinaculum of right wrist",
+          "conceptId": "FMA40120"
+        },
+        {
+          "id": "FJ1471M",
+          "name": "Flexor retinaculum of left wrist",
+          "conceptId": "FMA40121"
+        }
+      ]
+    },
+    {
+      "id": "FMA40120",
+      "name": "flexor retinaculum of right wrist",
+      "elements": [
+        "FJ1471"
+      ],
+      "sourcePieces": [
+        {
+          "id": "FJ1471",
+          "name": "Flexor retinaculum of right wrist",
+          "conceptId": "FMA40120"
+        }
+      ]
+    },
+    {
+      "id": "FMA40121",
+      "name": "flexor retinaculum of left wrist",
+      "elements": [
+        "FJ1471M"
+      ],
+      "sourcePieces": [
+        {
+          "id": "FJ1471M",
+          "name": "Flexor retinaculum of left wrist",
+          "conceptId": "FMA40121"
+        }
+      ]
+    },
+    {
+      "id": "FMA51048",
+      "name": "iliotibial tract",
+      "elements": [
+        "FJ1423",
+        "FJ1423M"
+      ],
+      "sourcePieces": [
+        {
+          "id": "FJ1423",
+          "name": "Right iliotibial tract",
+          "conceptId": "FMA58776"
+        },
+        {
+          "id": "FJ1423M",
+          "name": "Left iliotibial tract",
+          "conceptId": "FMA58777"
+        }
+      ]
+    },
+    {
+      "id": "FMA57965",
+      "name": "zone of investing fascia",
+      "elements": [
+        "FJ1423",
+        "FJ1423M"
+      ],
+      "sourcePieces": [
+        {
+          "id": "FJ1423",
+          "name": "Right iliotibial tract",
+          "conceptId": "FMA58776"
+        },
+        {
+          "id": "FJ1423M",
+          "name": "Left iliotibial tract",
+          "conceptId": "FMA58777"
+        }
+      ]
+    },
+    {
+      "id": "FMA58420",
+      "name": "zone of investing fascia of free lower limb",
+      "elements": [
+        "FJ1423",
+        "FJ1423M"
+      ],
+      "sourcePieces": [
+        {
+          "id": "FJ1423",
+          "name": "Right iliotibial tract",
+          "conceptId": "FMA58776"
+        },
+        {
+          "id": "FJ1423M",
+          "name": "Left iliotibial tract",
+          "conceptId": "FMA58777"
+        }
+      ]
+    },
+    {
+      "id": "FMA58421",
+      "name": "zone of investing fascia of lower limb",
+      "elements": [
+        "FJ1423",
+        "FJ1423M"
+      ],
+      "sourcePieces": [
+        {
+          "id": "FJ1423",
+          "name": "Right iliotibial tract",
+          "conceptId": "FMA58776"
+        },
+        {
+          "id": "FJ1423M",
+          "name": "Left iliotibial tract",
+          "conceptId": "FMA58777"
+        }
+      ]
+    },
+    {
+      "id": "FMA58741",
+      "name": "zone of investing fascia of thigh",
+      "elements": [
+        "FJ1423",
+        "FJ1423M"
+      ],
+      "sourcePieces": [
+        {
+          "id": "FJ1423",
+          "name": "Right iliotibial tract",
+          "conceptId": "FMA58776"
+        },
+        {
+          "id": "FJ1423M",
+          "name": "Left iliotibial tract",
+          "conceptId": "FMA58777"
+        }
+      ]
+    },
+    {
+      "id": "FMA58775",
+      "name": "zone of fascia lata",
+      "elements": [
+        "FJ1423",
+        "FJ1423M"
+      ],
+      "sourcePieces": [
+        {
+          "id": "FJ1423",
+          "name": "Right iliotibial tract",
+          "conceptId": "FMA58776"
+        },
+        {
+          "id": "FJ1423M",
+          "name": "Left iliotibial tract",
+          "conceptId": "FMA58777"
+        }
+      ]
+    },
+    {
+      "id": "FMA58776",
+      "name": "right iliotibial tract",
+      "elements": [
+        "FJ1423"
+      ],
+      "sourcePieces": [
+        {
+          "id": "FJ1423",
+          "name": "Right iliotibial tract",
+          "conceptId": "FMA58776"
+        }
+      ]
+    },
+    {
+      "id": "FMA58777",
+      "name": "left iliotibial tract",
+      "elements": [
+        "FJ1423M"
+      ],
+      "sourcePieces": [
+        {
+          "id": "FJ1423M",
+          "name": "Left iliotibial tract",
+          "conceptId": "FMA58777"
+        }
+      ]
+    },
+    {
+      "id": "FMA51044",
+      "name": "fascia lata of right thigh",
+      "elements": [
+        "FJ1423"
+      ],
+      "sourcePieces": [
+        {
+          "id": "FJ1423",
+          "name": "Right iliotibial tract",
+          "conceptId": "FMA58776"
+        }
+      ]
+    },
+    {
+      "id": "FMA51045",
+      "name": "fascia lata of left thigh",
+      "elements": [
+        "FJ1423M"
+      ],
+      "sourcePieces": [
+        {
+          "id": "FJ1423M",
+          "name": "Left iliotibial tract",
+          "conceptId": "FMA58777"
+        }
+      ]
+    },
+    {
+      "id": "FMA58401",
+      "name": "investing fascia of right upper limb",
+      "elements": [
+        "FJ1471"
+      ],
+      "sourcePieces": [
+        {
+          "id": "FJ1471",
+          "name": "Flexor retinaculum of right wrist",
+          "conceptId": "FMA40120"
+        }
+      ]
+    },
+    {
+      "id": "FMA58405",
+      "name": "investing fascia of right free upper limb",
+      "elements": [
+        "FJ1471"
+      ],
+      "sourcePieces": [
+        {
+          "id": "FJ1471",
+          "name": "Flexor retinaculum of right wrist",
+          "conceptId": "FMA40120"
+        }
+      ]
+    },
+    {
+      "id": "FMA58406",
+      "name": "investing fascia of left free upper limb",
+      "elements": [
+        "FJ1471M"
+      ],
+      "sourcePieces": [
+        {
+          "id": "FJ1471M",
+          "name": "Flexor retinaculum of left wrist",
+          "conceptId": "FMA40121"
+        }
+      ]
+    },
+    {
+      "id": "FMA58418",
+      "name": "investing fascia of right lower limb",
+      "elements": [
+        "FJ1423"
+      ],
+      "sourcePieces": [
+        {
+          "id": "FJ1423",
+          "name": "Right iliotibial tract",
+          "conceptId": "FMA58776"
+        }
+      ]
+    },
+    {
+      "id": "FMA58419",
+      "name": "investing fascia of left lower limb",
+      "elements": [
+        "FJ1423M"
+      ],
+      "sourcePieces": [
+        {
+          "id": "FJ1423M",
+          "name": "Left iliotibial tract",
+          "conceptId": "FMA58777"
+        }
+      ]
+    },
+    {
+      "id": "FMA58429",
+      "name": "investing fascia of right free lower limb",
+      "elements": [
+        "FJ1423"
+      ],
+      "sourcePieces": [
+        {
+          "id": "FJ1423",
+          "name": "Right iliotibial tract",
+          "conceptId": "FMA58776"
+        }
+      ]
+    },
+    {
+      "id": "FMA58430",
+      "name": "investing fascia of left free lower limb",
+      "elements": [
+        "FJ1423M"
+      ],
+      "sourcePieces": [
+        {
+          "id": "FJ1423M",
+          "name": "Left iliotibial tract",
+          "conceptId": "FMA58777"
+        }
+      ]
+    },
+    {
+      "id": "FMA58448",
+      "name": "investing fascia of right wrist",
+      "elements": [
+        "FJ1471"
+      ],
+      "sourcePieces": [
+        {
+          "id": "FJ1471",
+          "name": "Flexor retinaculum of right wrist",
+          "conceptId": "FMA40120"
+        }
+      ]
+    },
+    {
+      "id": "FMA58449",
+      "name": "investing fascia of left wrist",
+      "elements": [
+        "FJ1471M"
+      ],
+      "sourcePieces": [
+        {
+          "id": "FJ1471M",
+          "name": "Flexor retinaculum of left wrist",
+          "conceptId": "FMA40121"
+        }
+      ]
+    },
+    {
+      "id": "FMA58575",
+      "name": "investing fascia of right forearm",
+      "elements": [
+        "FJ1471"
+      ],
+      "sourcePieces": [
+        {
+          "id": "FJ1471",
+          "name": "Flexor retinaculum of right wrist",
+          "conceptId": "FMA40120"
+        }
+      ]
+    },
+    {
+      "id": "FMA58576",
+      "name": "investing fascia of left forearm",
+      "elements": [
+        "FJ1471M"
+      ],
+      "sourcePieces": [
+        {
+          "id": "FJ1471M",
+          "name": "Flexor retinaculum of left wrist",
+          "conceptId": "FMA40121"
+        }
+      ]
+    },
+    {
+      "id": "FMA58742",
+      "name": "investing fascia of right thigh",
+      "elements": [
+        "FJ1423"
+      ],
+      "sourcePieces": [
+        {
+          "id": "FJ1423",
+          "name": "Right iliotibial tract",
+          "conceptId": "FMA58776"
+        }
+      ]
+    },
+    {
+      "id": "FMA58743",
+      "name": "investing fascia of left thigh",
+      "elements": [
+        "FJ1423M"
+      ],
+      "sourcePieces": [
+        {
+          "id": "FJ1423M",
+          "name": "Left iliotibial tract",
+          "conceptId": "FMA58777"
+        }
+      ]
+    },
+    {
+      "id": "FMA79063",
+      "name": "deep fascial system",
+      "elements": [
+        "FJ1423",
+        "FJ1423M",
+        "FJ1471"
+      ],
+      "sourcePieces": [
+        {
+          "id": "FJ1423",
+          "name": "Right iliotibial tract",
+          "conceptId": "FMA58776"
+        },
+        {
+          "id": "FJ1423M",
+          "name": "Left iliotibial tract",
+          "conceptId": "FMA58777"
+        },
+        {
+          "id": "FJ1471",
+          "name": "Flexor retinaculum of right wrist",
+          "conceptId": "FMA40120"
+        }
+      ]
+    }
+  ],
+  "caveat": "Candidate generation is not classification. Parent concept membership does not establish complete geometry of that parent. No independent named fascia was verified in this snapshot. Do not interpret this as absence from all BodyParts3D releases."
+}
