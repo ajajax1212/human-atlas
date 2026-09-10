@@ -40,3 +40,10 @@ next-env.d.ts
 
 # Official audit downloads: hashes and matched rows are tracked separately.
 /research/sources/
+
+# VHP inputs and intermediate surfaces are offline only.
+*.nii
+*.nii.gz
+**/__pycache__/
+/research/vhp-work/
+/.venv-vhp/

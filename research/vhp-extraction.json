@@ -1,0 +1,203 @@
+{
+  "input": "male-small.nii.gz",
+  "threshold": "> 0",
+  "reason": "retain every nonzero summative-binning signal before component filtering; not a histological cutoff",
+  "componentConnectivity": 6,
+  "minimumVoxels": 8,
+  "removedVoxelCount": 249208,
+  "removedFractionOfNonzero": 0.005168518255161762,
+  "morphologicalClosing": false,
+  "smoothing": false,
+  "surfaceAlgorithm": "Lewiner marching cubes",
+  "level": 0.5,
+  "stepSize": 1,
+  "paddingVoxels": 1,
+  "simplification": {
+    "method": "quadric error, second pass after aggressiveness 4",
+    "aggressiveness": 7,
+    "targetFaces": 2000000
+  },
+  "metrics": {
+    "before": {
+      "vertices": 34719485,
+      "triangles": 70911866,
+      "areaMm2": 25695644.0,
+      "boundsMm": [
+        [
+          -0.5,
+          -0.5,
+          -0.5
+        ],
+        [
+          539.5,
+          307.5,
+          1866.5
+        ]
+      ],
+      "components": 133441,
+      "largestVertexCounts": [
+        31742517,
+        61794,
+        37048,
+        35677,
+        30339,
+        28862,
+        25646,
+        24843,
+        23170,
+        22182,
+        15520,
+        14141,
+        11000,
+        10501,
+        9729,
+        9627,
+        8340,
+        7755,
+        7602,
+        7222
+      ],
+      "componentsAtLeast100Vertices": 2709
+    },
+    "after": {
+      "vertices": 784658,
+      "triangles": 2000000,
+      "areaMm2": 18329502.79800441,
+      "boundsMm": [
+        [
+          0.8953450304161509,
+          1.055906399774448,
+          0.1668439711612671
+        ],
+        [
+          538.852005655943,
+          307.23563996277807,
+          1866.4075342465756
+        ]
+      ],
+      "components": 4101,
+      "largestVertexCounts": [
+        732052,
+        4788,
+        1893,
+        1313,
+        954,
+        929,
+        894,
+        841,
+        826,
+        762,
+        710,
+        669,
+        658,
+        657,
+        626,
+        519,
+        449,
+        368,
+        350,
+        335
+      ],
+      "componentsAtLeast100Vertices": 52
+    },
+    "relativeAreaChange": -0.28666886893341104,
+    "sampledVertexHausdorffMmSecondPass": 16.504471912615728,
+    "sampledVertexDistanceP95MmSecondPass": 2.9937958950230943,
+    "distanceMethod": "100000 deterministic vertex samples against first-pass mesh; not exact triangle Hausdorff nor direct original comparison",
+    "majorSheetContinuity": "Components measured. Thin sheets and individual anatomical continuity remain unvalidated."
+  },
+  "firstPass": {
+    "method": "quadric error",
+    "aggressiveness": 4,
+    "targetFaces": 1000000
+  },
+  "firstPassMetrics": {
+    "before": {
+      "vertices": 34719485,
+      "triangles": 70911866,
+      "areaMm2": 25695644.0,
+      "boundsMm": [
+        [
+          -0.5,
+          -0.5,
+          -0.5
+        ],
+        [
+          539.5,
+          307.5,
+          1866.5
+        ]
+      ],
+      "components": 133441,
+      "largestVertexCounts": [
+        31742517,
+        61794,
+        37048,
+        35677,
+        30339,
+        28862,
+        25646,
+        24843,
+        23170,
+        22182,
+        15520,
+        14141,
+        11000,
+        10501,
+        9729,
+        9627,
+        8340,
+        7755,
+        7602,
+        7222
+      ],
+      "componentsAtLeast100Vertices": 2709
+    },
+    "after": {
+      "vertices": 20855878,
+      "triangles": 43184586,
+      "areaMm2": 25695238.99609026,
+      "boundsMm": [
+        [
+          -0.5000000000000325,
+          -0.4999999999999764,
+          -0.5000000000000488
+        ],
+        [
+          539.5000000000003,
+          307.5000000000002,
+          1866.5000000000011
+        ]
+      ],
+      "components": 133441,
+      "largestVertexCounts": [
+        18518892,
+        36019,
+        22787,
+        22359,
+        20314,
+        17980,
+        17969,
+        17742,
+        15995,
+        12123,
+        9274,
+        7522,
+        7453,
+        6672,
+        6183,
+        5594,
+        4842,
+        4830,
+        4786,
+        4634
+      ],
+      "componentsAtLeast100Vertices": 1892
+    },
+    "relativeAreaChange": -1.5761578489370542e-05,
+    "sampledVertexHausdorffMm": 11.475589884969217,
+    "sampledVertexDistanceP95Mm": 1.0,
+    "distanceMethod": "deterministic up to 100000 vertex samples each direction; nearest vertex, not exact surface Hausdorff",
+    "majorSheetContinuity": "component counts reported; regional thin-sheet continuity is not anatomically validated"
+  }
+}

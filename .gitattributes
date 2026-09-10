@@ -1,1 +1,2 @@
 research/name-sources/*.txt -text
+public/models/fascia/*.bin* -text

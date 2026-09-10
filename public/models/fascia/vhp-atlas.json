@@ -1,0 +1,353 @@
+{
+  "version": 1,
+  "sourceDataset": "VHP-Connective-Tissue-2025",
+  "evidence": "image-derived",
+  "structureType": "connective-tissue-volume",
+  "name": "VHP Connective Tissue",
+  "sourceDoi": "10.17632/zc53h3dcfg.1",
+  "paperDoi": "10.1038/s41597-025-06134-x",
+  "license": "CC BY 4.0",
+  "authors": [
+    "Heiko Stark",
+    "Julian Sartori"
+  ],
+  "inputSha256": "836db59cc879fd69448382eba240bd52df03c3c1639a306ab952f35b90886e37",
+  "vertexCount": 784658,
+  "indexCount": 6000000,
+  "positions": 0,
+  "normals": 9415896,
+  "indices": 18831792,
+  "bounds": [
+    [
+      -0.2482837289571762,
+      -0.010442595928907394,
+      -0.14074839651584625
+    ],
+    [
+      0.24824707210063934,
+      1.7095707654953003,
+      0.14215433597564697
+    ]
+  ],
+  "url": "/models/fascia/vhp-0.bin",
+  "gzip": "/models/fascia/vhp-0.bin.gz",
+  "bytes": 42831792,
+  "gzipBytes": 28368233,
+  "sha256": "9440c6301e0154d89a776de0ce2a55ec6df6d29fd0fe2eda8023a85b9ecaba73",
+  "gzipSha256": "68f48edda9f86c99b3aafd99336889c924ea20a8eac0b8726845b22406d4410e",
+  "registration": {
+    "source": "VHP male, 2025 connective tissue dataset",
+    "target": "BodyParts3D 4.0 / FJ2810 Skin",
+    "method": "RAS-to-atlas proper rotation; global height scale; body-envelope centering; trimmed rigid point-to-point ICP",
+    "version": 1,
+    "matrixInput": "NIfTI affine world coordinates in mm",
+    "matrixOutput": "existing Human Atlas coordinates in meters",
+    "matrix": [
+      [
+        -0.0009219006655724126,
+        6.6510901954341805e-06,
+        -6.4189896389072855e-06,
+        0.25662700322180143
+      ],
+      [
+        -6.123816854213033e-06,
+        4.009676247719559e-05,
+        0.000921054301394662,
+        -0.015968720700596416
+      ],
+      [
+        6.92382090382582e-06,
+        0.0009210506447800194,
+        -4.005056886028198e-05,
+        -0.10074136117915734
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "initialMatrix": [
+      [
+        -0.0009219470036892725,
+        0.0,
+        0.0,
+        0.250605544200212
+      ],
+      [
+        0.0,
+        0.0,
+        0.0009219470036892725,
+        -0.0023048675092232074
+      ],
+      [
+        0.0,
+        0.0009219470036892725,
+        0.0,
+        -0.14212989052083475
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "globalScaleMetersPerMm": 0.0009219470036892725,
+    "reference": {
+      "source": "union of official body-region labels 1 through 15; label 16 singleton excluded",
+      "targetPartId": "FJ2810",
+      "sourceSurfaceVertices": 112442,
+      "targetSurfaceVertices": 22902
+    },
+    "parameters": {
+      "iterations": 30,
+      "maximumIterations": 30,
+      "retainedCorrespondenceQuantile": 0.8,
+      "sourceTrainStride": 4,
+      "sourceHeldOutOffset": 2,
+      "targetTrainStride": 2,
+      "targetHeldOutOffset": 1
+    },
+    "manualAdjustment": false,
+    "landmarks": [],
+    "metrics": {
+      "initialHeldOutSurfaceSampleDistance": {
+        "symmetricMeanMm": 26.92665101512973,
+        "symmetricP95Mm": 70.25355217115926,
+        "sampledHausdorffMm": 167.02173865088682
+      },
+      "finalHeldOutSurfaceSampleDistance": {
+        "symmetricMeanMm": 24.566009276043797,
+        "symmetricP95Mm": 71.40569012072861,
+        "sampledHausdorffMm": 163.48766425331348
+      },
+      "bodyExtentErrorMm": [
+        -167.38179990597578,
+        1.7659433963685967,
+        -3.191285544006217
+      ],
+      "distanceCaveat": "nearest sampled vertices, not exact triangle surface distances",
+      "landmarkError": null,
+      "landmarkErrorReason": "No independently annotated homologous landmarks are provided in both datasets. Body envelope is used only for coarse anatomical placement.",
+      "dice": null,
+      "regionOverlap": null,
+      "overlapReason": "Target Atlas lacks a matching labeled donor volume; connective signal is not homologous to the whole skin envelope."
+    },
+    "nonRigidRegistration": {
+      "applied": false,
+      "reason": "Body-region volumes alone do not establish pointwise tissue correspondences; a warp would imply unsupported precision."
+    },
+    "quality": "coarse educational alignment; different donor proportions and limb posture remain; not anatomically validated"
+  },
+  "processing": {
+    "input": "male-small.nii.gz",
+    "threshold": "> 0",
+    "reason": "retain every nonzero summative-binning signal before component filtering; not a histological cutoff",
+    "componentConnectivity": 6,
+    "minimumVoxels": 8,
+    "removedVoxelCount": 249208,
+    "removedFractionOfNonzero": 0.005168518255161762,
+    "morphologicalClosing": false,
+    "smoothing": false,
+    "surfaceAlgorithm": "Lewiner marching cubes",
+    "level": 0.5,
+    "stepSize": 1,
+    "paddingVoxels": 1,
+    "simplification": {
+      "method": "quadric error, second pass after aggressiveness 4",
+      "aggressiveness": 7,
+      "targetFaces": 2000000
+    },
+    "metrics": {
+      "before": {
+        "vertices": 34719485,
+        "triangles": 70911866,
+        "areaMm2": 25695644.0,
+        "boundsMm": [
+          [
+            -0.5,
+            -0.5,
+            -0.5
+          ],
+          [
+            539.5,
+            307.5,
+            1866.5
+          ]
+        ],
+        "components": 133441,
+        "largestVertexCounts": [
+          31742517,
+          61794,
+          37048,
+          35677,
+          30339,
+          28862,
+          25646,
+          24843,
+          23170,
+          22182,
+          15520,
+          14141,
+          11000,
+          10501,
+          9729,
+          9627,
+          8340,
+          7755,
+          7602,
+          7222
+        ],
+        "componentsAtLeast100Vertices": 2709
+      },
+      "after": {
+        "vertices": 784658,
+        "triangles": 2000000,
+        "areaMm2": 18329502.79800441,
+        "boundsMm": [
+          [
+            0.8953450304161509,
+            1.055906399774448,
+            0.1668439711612671
+          ],
+          [
+            538.852005655943,
+            307.23563996277807,
+            1866.4075342465756
+          ]
+        ],
+        "components": 4101,
+        "largestVertexCounts": [
+          732052,
+          4788,
+          1893,
+          1313,
+          954,
+          929,
+          894,
+          841,
+          826,
+          762,
+          710,
+          669,
+          658,
+          657,
+          626,
+          519,
+          449,
+          368,
+          350,
+          335
+        ],
+        "componentsAtLeast100Vertices": 52
+      },
+      "relativeAreaChange": -0.28666886893341104,
+      "sampledVertexHausdorffMmSecondPass": 16.504471912615728,
+      "sampledVertexDistanceP95MmSecondPass": 2.9937958950230943,
+      "distanceMethod": "100000 deterministic vertex samples against first-pass mesh; not exact triangle Hausdorff nor direct original comparison",
+      "majorSheetContinuity": "Components measured. Thin sheets and individual anatomical continuity remain unvalidated."
+    },
+    "firstPass": {
+      "method": "quadric error",
+      "aggressiveness": 4,
+      "targetFaces": 1000000
+    },
+    "firstPassMetrics": {
+      "before": {
+        "vertices": 34719485,
+        "triangles": 70911866,
+        "areaMm2": 25695644.0,
+        "boundsMm": [
+          [
+            -0.5,
+            -0.5,
+            -0.5
+          ],
+          [
+            539.5,
+            307.5,
+            1866.5
+          ]
+        ],
+        "components": 133441,
+        "largestVertexCounts": [
+          31742517,
+          61794,
+          37048,
+          35677,
+          30339,
+          28862,
+          25646,
+          24843,
+          23170,
+          22182,
+          15520,
+          14141,
+          11000,
+          10501,
+          9729,
+          9627,
+          8340,
+          7755,
+          7602,
+          7222
+        ],
+        "componentsAtLeast100Vertices": 2709
+      },
+      "after": {
+        "vertices": 20855878,
+        "triangles": 43184586,
+        "areaMm2": 25695238.99609026,
+        "boundsMm": [
+          [
+            -0.5000000000000325,
+            -0.4999999999999764,
+            -0.5000000000000488
+          ],
+          [
+            539.5000000000003,
+            307.5000000000002,
+            1866.5000000000011
+          ]
+        ],
+        "components": 133441,
+        "largestVertexCounts": [
+          18518892,
+          36019,
+          22787,
+          22359,
+          20314,
+          17980,
+          17969,
+          17742,
+          15995,
+          12123,
+          9274,
+          7522,
+          7453,
+          6672,
+          6183,
+          5594,
+          4842,
+          4830,
+          4786,
+          4634
+        ],
+        "componentsAtLeast100Vertices": 1892
+      },
+      "relativeAreaChange": -1.5761578489370542e-05,
+      "sampledVertexHausdorffMm": 11.475589884969217,
+      "sampledVertexDistanceP95Mm": 1.0,
+      "distanceMethod": "deterministic up to 100000 vertex samples each direction; nearest vertex, not exact surface Hausdorff",
+      "majorSheetContinuity": "component counts reported; regional thin-sheet continuity is not anatomically validated"
+    }
+  },
+  "limitations": [
+    "Image-derived connective tissue, not named fascia.",
+    "Different donors; coarse body-envelope alignment only.",
+    "Some disconnected small components omitted and surface simplified.",
+    "No clinical or sheet-continuity validation."
+  ]
+}

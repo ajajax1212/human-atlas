@@ -45,3 +45,9 @@ This is a reference assembly with whole-body surface and selected organs, includ
 ## 日本語表示（Phase 1.5）
 
 BodyParts3D公式IS-A・PARTOF名称表の日本語（kanji・kana）をFMA IDで照合しています。名称未登録の場合は英語を保持し、独自の解剖学訳は追加していません。UIと一般説明を日本語化し、筋膜系の単独表示と収録4構造の選択を追加しました。原形状とIDは変更していません。名称表のライセンスもBodyParts3DのCC BY 4.0に従います。
+
+## Phase 2 — VHP Connective Tissue (概観用研究試作)
+
+Heiko Stark and Julian Sartori, The connective tissue of a man, Mendeley Data v1, DOI: https://doi.org/10.17632/zc53h3dcfg.1, licensed under CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/). Paper: https://doi.org/10.1038/s41597-025-06134-x.
+
+変更: male-small.nii.gzの非ゼロ領域から微小成分を除去し、表面抽出・簡略化・別献体BodyParts3Dへの粗い体表位置合わせを行った。表面積約28.7%減、体表サンプル距離平均約24.6 mm。原著者の推奨・精度保証を意味しない。名称付き筋膜ではなく、画像由来の結合組織の概観用であり、細い膜の形状や連続性の評価には使用できない。詳細条件は/models/fascia/vhp-atlas.jsonとresearch/phase-2-vhp.mdに記録。

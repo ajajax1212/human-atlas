@@ -1,0 +1,106 @@
+{
+  "source": "VHP male, 2025 connective tissue dataset",
+  "target": "BodyParts3D 4.0 / FJ2810 Skin",
+  "method": "RAS-to-atlas proper rotation; global height scale; body-envelope centering; trimmed rigid point-to-point ICP",
+  "version": 1,
+  "matrixInput": "NIfTI affine world coordinates in mm",
+  "matrixOutput": "existing Human Atlas coordinates in meters",
+  "matrix": [
+    [
+      -0.0009219006655724126,
+      6.6510901954341805e-06,
+      -6.4189896389072855e-06,
+      0.25662700322180143
+    ],
+    [
+      -6.123816854213033e-06,
+      4.009676247719559e-05,
+      0.000921054301394662,
+      -0.015968720700596416
+    ],
+    [
+      6.92382090382582e-06,
+      0.0009210506447800194,
+      -4.005056886028198e-05,
+      -0.10074136117915734
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "initialMatrix": [
+    [
+      -0.0009219470036892725,
+      0.0,
+      0.0,
+      0.250605544200212
+    ],
+    [
+      0.0,
+      0.0,
+      0.0009219470036892725,
+      -0.0023048675092232074
+    ],
+    [
+      0.0,
+      0.0009219470036892725,
+      0.0,
+      -0.14212989052083475
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "globalScaleMetersPerMm": 0.0009219470036892725,
+  "reference": {
+    "source": "union of official body-region labels 1 through 15; label 16 singleton excluded",
+    "targetPartId": "FJ2810",
+    "sourceSurfaceVertices": 112442,
+    "targetSurfaceVertices": 22902
+  },
+  "parameters": {
+    "iterations": 30,
+    "maximumIterations": 30,
+    "retainedCorrespondenceQuantile": 0.8,
+    "sourceTrainStride": 4,
+    "sourceHeldOutOffset": 2,
+    "targetTrainStride": 2,
+    "targetHeldOutOffset": 1
+  },
+  "manualAdjustment": false,
+  "landmarks": [],
+  "metrics": {
+    "initialHeldOutSurfaceSampleDistance": {
+      "symmetricMeanMm": 26.92665101512973,
+      "symmetricP95Mm": 70.25355217115926,
+      "sampledHausdorffMm": 167.02173865088682
+    },
+    "finalHeldOutSurfaceSampleDistance": {
+      "symmetricMeanMm": 24.566009276043797,
+      "symmetricP95Mm": 71.40569012072861,
+      "sampledHausdorffMm": 163.48766425331348
+    },
+    "bodyExtentErrorMm": [
+      -167.38179990597578,
+      1.7659433963685967,
+      -3.191285544006217
+    ],
+    "distanceCaveat": "nearest sampled vertices, not exact triangle surface distances",
+    "landmarkError": null,
+    "landmarkErrorReason": "No independently annotated homologous landmarks are provided in both datasets. Body envelope is used only for coarse anatomical placement.",
+    "dice": null,
+    "regionOverlap": null,
+    "overlapReason": "Target Atlas lacks a matching labeled donor volume; connective signal is not homologous to the whole skin envelope."
+  },
+  "nonRigidRegistration": {
+    "applied": false,
+    "reason": "Body-region volumes alone do not establish pointwise tissue correspondences; a warp would imply unsupported precision."
+  },
+  "quality": "coarse educational alignment; different donor proportions and limb posture remain; not anatomically validated"
+}
