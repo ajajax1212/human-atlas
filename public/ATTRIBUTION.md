@@ -41,3 +41,7 @@ Earlier repository revisions included female reference anatomy: Kristen Browne a
 Adaptations: translated native meter/Y-up coordinates onto the stage, coincident vertices welded and source normals averaged, geometry simplified with a 0.2% per-structure relative error bound, and normals quantized. Colors and display systems are curated for this interface. All 888 source meshes are represented, with 1,073 source nodes available as selectable individual or compound concepts.
 
 This is a reference assembly with whole-body surface and selected organs, including female reproductive anatomy. Its skeleton and muscle coverage is partial. It is not a complete model of every human structure or a single-person scan. Eight placenta/umbilical structures are classified under Pregnancy reference and hidden by default.
+
+## 日本語表示（Phase 1.5）
+
+BodyParts3D公式IS-A・PARTOF名称表の日本語（kanji・kana）をFMA IDで照合しています。名称未登録の場合は英語を保持し、独自の解剖学訳は追加していません。UIと一般説明を日本語化し、筋膜系の単独表示と収録4構造の選択を追加しました。原形状とIDは変更していません。名称表のライセンスもBodyParts3DのCC BY 4.0に従います。

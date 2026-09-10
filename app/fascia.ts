@@ -16,10 +16,10 @@ export interface FasciaMetadata {
   notes: string;
 }
 export const EVIDENCE_LABELS: Record<EvidenceLevel,string> = {
-  'source-named': 'Source anatomy',
-  'image-derived': 'Image-derived',
-  'literature-derived': 'Literature-derived',
-  inferred: 'Inferred / Educational model',
+  'source-named': '原データ由来',
+  'image-derived': '画像由来',
+  'literature-derived': '文献由来',
+  inferred: '推定・教育用モデル',
 };
 export const DEFAULT_FASCIA_OPACITY = 0.65;
 export const fasciaMetadata = new Map((nativeMetadata.parts as FasciaMetadata[]).map(p => [p.partId,p]));

@@ -12,7 +12,8 @@
     "check": "tsc --noEmit",
     "analyze:fascia": "node scripts/analyze-fascia.mjs",
     "classify:fascia": "node scripts/apply-fascia-classification.mjs",
-    "validate": "npm run check && node scripts/validate-atlas.mjs && node scripts/validate-interactions.mjs && node scripts/validate-fascia.mjs"
+    "validate": "npm run check && node scripts/validate-atlas.mjs && node scripts/validate-interactions.mjs && node scripts/validate-fascia.mjs && node scripts/validate-japanese.mjs",
+    "names:build": "node scripts/build-japanese.mjs"
   },
   "dependencies": {
     "@base-ui/react": "1.7.0",
