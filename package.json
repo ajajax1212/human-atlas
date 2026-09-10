@@ -12,7 +12,7 @@
     "check": "tsc --noEmit",
     "analyze:fascia": "node scripts/analyze-fascia.mjs",
     "classify:fascia": "node scripts/apply-fascia-classification.mjs",
-    "validate": "npm run check && node scripts/validate-atlas.mjs && node scripts/validate-interactions.mjs && node scripts/validate-fascia.mjs && node scripts/validate-japanese.mjs",
+    "validate": "npm run check && node scripts/validate-atlas.mjs && node scripts/validate-interactions.mjs && node scripts/validate-fascia.mjs && node scripts/validate-japanese.mjs && node scripts/validate-vhp.mjs",
     "names:build": "node scripts/build-japanese.mjs"
   },
   "dependencies": {
